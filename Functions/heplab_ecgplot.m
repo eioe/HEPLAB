@@ -81,6 +81,17 @@ if RRinterval(1)~=-1,
 end
 
 grid
-axis([t(1) t(length(t)) -0.1 1.1])
+
+% The following line sometimes caused the signal to get "out of sight" when 
+% zooming (FK --- eioe):
+% axis([t(1) t(length(t)) -0.1 1.1])
+
+% Replacement:
+sig_span = max(signal) - min(signal);
+y_spacing = sig_span * 0.1;
+lims = [min(t) max(t) min(signal) - y_spacing, max(signal) + y_spacing];
+axis(lims);
+
+
 xlabel('Time (sec)','fontsize',12)
 ylabel('Normalized amplitude','fontsize',12)
