@@ -1,8 +1,9 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2649943.svg)](https://doi.org/10.5281/zenodo.2649943)
 
-> This fork currently only implements a very small change/hack to avoid scaling problems when plotting the signal. 
-> Changes affect/replace line 84 in `functions/heplab_ecgplot.mat` and implement and automated scaling of the y-axis. 
-> It feels a bit too hacky for a proper PR. 
+> This fork currently only implements a very small change/hack to avoid scaling problems when plotting the signal.  
+> Changes affect/replace line 84 in `functions/heplab_ecgplot.mat` and implement automated scaling of the y-axis.  
+> It feels a bit too hacky for a proper PR.  
+>  
 > Feb 2020 (Felix Klotzsche --- eioe)
 
 # HEPLAB
