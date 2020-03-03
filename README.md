@@ -1,5 +1,10 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2649943.svg)](https://doi.org/10.5281/zenodo.2649943)
 
+> This fork currently only implements a very small change/hack to avoid scaling problems when plotting the signal. 
+> Changes affect/replace line 84 in `functions/heplab_ecgplot.mat` and implement and automated scaling of the y-axis. 
+> It feels a bit too hacky for a proper PR. 
+> Feb 2020 (Felix Klotzsche --- eioe)
+
 # HEPLAB
 HEPLAB is an [EEGLAB](https://sccn.ucsd.edu/eeglab/index.php) extension for the automatic detection of cardiac-related events from the raw ECG signal. Users can choose among three different algorithms for **R wave** detection and one algorithm for **T wave** detection. An intuitive Graphical User Interface (GUI) displays cardiac events and allows users to manually correct for artifacts. Events can then be exported to EEGLAB's EEG structure to facilitate the posterior analysis of the Heartbeat Evoked Potential (HEP). Although HEPLAB was originally designed as an EEGLAB extension it can also be used as a standalone Matlab toolbox.
 
